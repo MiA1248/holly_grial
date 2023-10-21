@@ -8,7 +8,7 @@ import 'primereact/resources/primereact.min.css'
 //theme
 import "primereact/resources/themes/lara-light-indigo/theme.css";             
 import 'primeflex/primeflex.css';
-import './index.css';
+import './styles.scss';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
