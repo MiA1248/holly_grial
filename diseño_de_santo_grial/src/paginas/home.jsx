@@ -1,30 +1,27 @@
 //home.jsx
 import React from 'react';
-import { Sidebarright } from "../components/sidebarright";
-import { Sidebarleft } from "../components/sidebarleft";
+import { Leftcontent } from "../components/leftcontent";
+import { Rigthcontent } from '../components/rigthcont';
 import { Header } from "../components/header";
-import { Main } from "../components/mainContent";
+import { Main } from "../components/main";
 import { Footer } from "../components/footer";
 
 export const Home = () => {
   return (
-    <div className="grid ">
-      <div className="col-12 ">
-        <Header />
+    <div className="holy-grail h-screen w-full">
+      <Header />
+      <div className="holy-grail-body">
+        <div className="holy-grail-content hg-sidebar ">
+          <Main />
+        </div>
+        <div className="holy-grail-sidebar-1 hg-sidebar ">
+          <Leftcontent />
+        </div>
+        <div className=" hg-sidebar ">
+          <Rigthcontent />
+        </div>
       </div>
-      <div className="col-2 ">
-        <Sidebarright />
-      </div>
-      <div className="col-8 ">
-       <Main />
-      </div>
-      <div className="col-2 ">
-        <Sidebarleft />
-      </div>
-      <div className="col-12">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
-  
 }

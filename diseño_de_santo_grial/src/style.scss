@@ -1,7 +1,47 @@
+///style.scss
+* {
+  box-sizing: border-box;
+  color: black;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+
+}
+.holy-grail,
+.holy-grail-body {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.holy-grail-content {
+    flex: 1 1 auto;
+}
+
+@media (min-width: 768px) {
+    .holy-grail-sidebar-1 {
+        order: -1;
+        flex: 1; /* Permitir que .holy-grail-sidebar-1 crezca para ocupar todo el espacio disponible */
+    }
+    .holy-grail-body {
+        flex-direction: row;
+    }
+    .hg-sidebar {
+        flex: 1; /* Permitir que .hg-sidebar y .main ocupen el espacio restante de manera equitativa */
+    }
+}
 
 
 
 
+
+
+			
+		  
 
 
 

@@ -1,6 +1,12 @@
 //footer.jsx
+import { Card } from 'primereact/card';
+
 export const Footer = () => {
   return (
-    <div className="text-center p-3 font-bold dimensionar-div-2 footer" style={{ backgroundColor: 'var(--surface-800)' }}>2</div>
+    <Card className="card flex justify-content-center h-14rem p-mb-2 bg-blue-900 footer-narrow">
+      <div>
+        <p>Derechos de autor &copy; 2023</p>
+      </div>
+    </Card>
   );
 };
