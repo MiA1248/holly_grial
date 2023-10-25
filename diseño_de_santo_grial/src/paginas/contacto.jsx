@@ -5,7 +5,7 @@ import { Footer } from "../components/footer";
 
 export const Contacto = () => {
   const contactData = [
-    { type: 'Email', value: 'correo@example.com' },
+    { type: 'Email', value: 'correo@ejemplo.com' },
     { type: 'Teléfono', value: '+2994599175' },
     { type: 'Dirección', value: '123 Calle Principal, Ciudad' },
   ];
